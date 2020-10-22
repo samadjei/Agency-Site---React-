@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import Cases from './components/cases.js';
 import Banner from './components/banner.js';
 import Header from './components/header.js';
 import './styles/App.scss';
@@ -12,6 +13,7 @@ function App() {
 		<div className="App">
 			<Header />
 			<Banner />
+			<Cases />
 		</div>
 	);
 }
