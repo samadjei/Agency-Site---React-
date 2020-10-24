@@ -1,7 +1,6 @@
 .cases {
 	height: 50vh;
 	height: calc(var(--vh, 1vh) * 50);
-
 	.cases-navigation {
 		position: absolute;
 		bottom: 0px;
@@ -43,7 +42,7 @@
 			cursor: pointer;
 			&:hover {
 				.case-image {
-					opacity: 0.4;
+					opacity: 0.4 !important;
 				}
 			}
 			.case-details {
@@ -57,11 +56,11 @@
 				box-sizing: border-box;
 				z-index: 1;
 				position: relative;
-				@include media('<=tablet') {
-					width: 100vw;
-				}
 				@include media('<=phone') {
 					padding: 16px;
+				}
+				@include media('<=tablet') {
+					width: 100vw;
 				}
 				span {
 					margin-top: 156px;
