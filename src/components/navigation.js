@@ -40,7 +40,7 @@ function Navigation() {
 						<div className="nav-label">Contact</div>
 						<div className="nav-infos">
 							<ul className="nav-info">
-								<li className="nav-inof-label">Email</li>
+								<li className="nav-info-label">Email</li>
 								<li>
 									<NavLink to="/contact" exact>
 										{' '}
@@ -55,17 +55,17 @@ function Navigation() {
 								</li>
 							</ul>
 							<ul className="nav-info">
-								<li className="nav-inof-label">Headquaters</li>
+								<li className="nav-info-label">Headquaters</li>
 								<li>51537 Jazmyne Lodge</li>
 								<li>Suite 029</li>
 								<li>Aruba</li>
 							</ul>
 							<ul className="nav-info">
-								<li className="nav-inof-label">Phone</li>
+								<li className="nav-info-label">Phone</li>
 								<li>264.516.6631</li>
 							</ul>
 							<ul className="nav-info">
-								<li className="nav-inof-label">Legal</li>
+								<li className="nav-info-label">Legal</li>
 								<li>Privacy and Cookies</li>
 							</ul>
 						</div>

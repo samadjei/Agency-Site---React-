@@ -11,24 +11,24 @@ const tl = gsap.timeline();
 // allows you to return the function when the animation is compelte
 // this would remove the black overlay (unmounts it)
 const homeAnimation = (completeAnimation) => {
-	tl.from('.line span', 1.8, {
+	tl.from('.line span', 1.5, {
 		y: 100,
 		ease: 'power4.out',
-		delay: 1,
+		delay: 0.7,
 		skeyY: 7,
 		stagger: {
 			amount: 0.3,
 		},
 	})
-		.to('.overlay-top', 1.6, {
+		.to('.overlay-top', 1.2, {
 			height: 0,
 			ease: 'expo.inOut',
-			stagger: 0.4,
+			stagger: 0.2,
 		})
-		.to('.overlay-bottom', 1.6, {
+		.to('.overlay-bottom', 1.4, {
 			width: 0,
 			ease: 'expo.inOut',
-			delay: -0.8,
+			delay: -0.6,
 			stagger: {
 				amount: 0.4,
 			},
@@ -46,7 +46,7 @@ const homeAnimation = (completeAnimation) => {
 			stagger: {
 				amount: 0.4,
 			},
-      // changes its state 
+			// changes its state
 			onComplete: completeAnimation,
 		});
 };
@@ -64,8 +64,8 @@ function Home() {
 		homeAnimation(completeAnimation);
 	}, []);
 	return (
-    <>
-      {/* we want to check when animation is set to false, we want to return IntroOverlay and when completeAnimation is set to true, we want to completely unmount it and not reutn anything at all  */}
+		<>
+			{/* we want to check when animation is set to false, we want to return IntroOverlay and when completeAnimation is set to true, we want to completely unmount it and not reutn anything at all  */}
 			{animationComplete === false ? <IntroOverlay /> : ''}
 			<IntroOverlay />
 			<Banner />
